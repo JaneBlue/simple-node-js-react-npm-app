@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'docker build . -t registry.cn-beijing.aliyuncs.com/rdc-template/repo:110' 
             }
         }
     }
